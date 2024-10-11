@@ -1,4 +1,4 @@
-package com.github.hrothwell.model.tree;
+package com.github.hrothwell.datastructures.tree;
 
 /**
  * Provides interface to enable traversals over TwoD trees to be defined. 

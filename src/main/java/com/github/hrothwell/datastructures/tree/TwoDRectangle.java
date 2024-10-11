@@ -1,8 +1,4 @@
-package com.github.hrothwell.model.twod;
-
-import com.github.hrothwell.model.FloatingPoint;
-import com.github.hrothwell.model.IPoint;
-import com.github.hrothwell.model.IRectangle;
+package com.github.hrothwell.datastructures.tree;
 
 /**
  * Represents a rectangular region in the Cartesian plane.

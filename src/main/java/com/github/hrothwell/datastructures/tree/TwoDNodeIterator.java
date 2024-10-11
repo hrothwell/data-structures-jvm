@@ -1,9 +1,7 @@
-package com.github.hrothwell.model.tree;
+package com.github.hrothwell.datastructures.tree;
 
 import java.util.Iterator;
 import java.util.Stack;
-
-import com.github.hrothwell.model.IPoint;
 
 /**
  * Provides in-order traversal of 2-dimensional KD-Tree.

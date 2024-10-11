@@ -1,8 +1,4 @@
-package com.github.hrothwell.model.tree;
-
-import com.github.hrothwell.model.IPoint;
-import com.github.hrothwell.model.IRectangle;
-import com.github.hrothwell.model.twod.TwoDRectangle;
+package com.github.hrothwell.datastructures.tree;
 
 /**
  * Represents the base class of a node in the TwoD tree.

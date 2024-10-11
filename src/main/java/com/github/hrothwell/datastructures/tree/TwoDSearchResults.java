@@ -1,10 +1,8 @@
-package com.github.hrothwell.model.tree;
+package com.github.hrothwell.datastructures.tree;
 
 import java.util.ArrayList;
 import java.util.ConcurrentModificationException;
 import java.util.Iterator;
-
-import com.github.hrothwell.model.IPoint;
 
 /**
  * Enables quick intersection detection by KD Tree and places burden

@@ -1,10 +1,8 @@
-package com.github.hrothwell.model.tree;
+package com.github.hrothwell.datastructures.tree;
 
 import java.util.Comparator;
 
-import com.github.hrothwell.model.FloatingPoint;
-import com.github.hrothwell.model.IPoint;
-import com.github.hrothwell.model.array.Selection;
+import com.github.hrothwell.datastructures.array.Selection;
 
 /**
  * Produces a TwoD-tree from a given input set using recursive median approach.

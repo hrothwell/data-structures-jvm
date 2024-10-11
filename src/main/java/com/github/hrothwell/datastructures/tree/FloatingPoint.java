@@ -1,4 +1,4 @@
-package com.github.hrothwell.model;
+package com.github.hrothwell.datastructures.tree;
 
 /**
  * Provides a standard API for evaluating double numbers when dealing with
