@@ -1,8 +1,8 @@
-package com.github.hrothwell.test
+package com.github.hrothwell.datastructures.test
 
-import com.github.hrothwell.model.IPoint
-import com.github.hrothwell.model.tree.TwoDTreeFactory
-import com.github.hrothwell.model.tree.TwoDTree
+import com.github.hrothwell.datastructures.tree.IPoint
+import com.github.hrothwell.datastructures.tree.TwoDTreeFactory
+import com.github.hrothwell.datastructures.tree.TwoDTree
 import kotlin.random.Random
 
 object TwoDTreeTest {

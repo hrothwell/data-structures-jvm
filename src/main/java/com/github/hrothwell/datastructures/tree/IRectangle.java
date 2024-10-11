@@ -1,4 +1,4 @@
-package com.github.hrothwell.model;
+package com.github.hrothwell.datastructures.tree;
 
 /**
  * Represents a rectangle in the Cartesian plane.

@@ -1,11 +1,7 @@
-package com.github.hrothwell.model.tree;
+package com.github.hrothwell.datastructures.tree;
 
 import java.util.ArrayList;
 import java.util.Iterator;
-
-import com.github.hrothwell.model.IPoint;
-import com.github.hrothwell.model.IRectangle;
-import com.github.hrothwell.model.twod.TwoDRectangle;
 
 /**
  * Standard unbalanced 2-dimensional binary tree.

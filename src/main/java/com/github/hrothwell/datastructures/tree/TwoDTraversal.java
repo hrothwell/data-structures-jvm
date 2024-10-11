@@ -1,4 +1,4 @@
-package com.github.hrothwell.model.tree;
+package com.github.hrothwell.datastructures.tree;
 
 /**
  * Defines a standard inorder traversal of the TwoDTree and enables subclasses

@@ -1,4 +1,4 @@
-package com.github.hrothwell.model.array;
+package com.github.hrothwell.datastructures.array;
 
 import java.util.Comparator;
 
