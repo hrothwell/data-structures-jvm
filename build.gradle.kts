@@ -1,19 +1,16 @@
 plugins {
-    kotlin("jvm") version "1.9.0"
-    application
+    java
 }
 
-group = "org.example"
+group = "com.github.hrothwell"
 version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
 }
 
-kotlin {
-    jvmToolchain(17)
-}
-
-application {
-    mainClass.set("MainKt")
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))
+    }
 }
