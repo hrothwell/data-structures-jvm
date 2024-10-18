@@ -23,7 +23,7 @@ public interface IPoint extends Comparable<IPoint> {
 	 * 
 	 * Useful for determining full ordering of IPoint objects over a Cartesian Plane.
 	 */
-	public static Comparator<IPoint> xy_sorter =
+  Comparator<IPoint> xy_sorter =
 		new Comparator<IPoint>() {
 
 			/**

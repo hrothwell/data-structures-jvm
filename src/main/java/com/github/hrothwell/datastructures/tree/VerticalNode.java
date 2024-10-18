@@ -4,7 +4,7 @@ package com.github.hrothwell.datastructures.tree;
  * Represents a node in the 2D-tree that partitions the space by means of a vertical
  * line at the given x-coordinate.
  * <p>
- * This class is intended as a simpler, optimized implementation of {@link DimensionalNode}
+ * This class is intended as a simpler, optimized implementation of DimensionalNode
  * for two dimensional KD trees. 
  * <p>
  * Ancestors via the left son are those points which are to the left of the point 

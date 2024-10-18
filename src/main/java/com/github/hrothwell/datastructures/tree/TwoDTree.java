@@ -18,7 +18,7 @@ import java.util.Iterator;
  * Note that the example above is for Double values; the node values stored could be
  * of any type that implements Comparable.
  *
- * TODO support generic typing
+ * TODO support generic typing - also removal. Maybe instead of removal / rebalancing it could be a nearest not visited for our use case
  * 
  * @author George Heineman
  * @version 1.0, 6/15/08
@@ -51,11 +51,11 @@ public class TwoDTree {
 		TwoDNode node = root;
 		TwoDNode next;
 		do {
-			/** if this point is below node, search that location. */
+			// if this point is below node, search that location.
 			if (node.isBelow(value)) {
 				next = node.getBelow();
 				if (next == null) {
-					/** insert here! */
+					// insert here
 					node.setBelow(node.construct(value));
 					break;
 				} else {
@@ -64,7 +64,7 @@ public class TwoDTree {
 			} else {
 				next = node.getAbove();
 				if (next == null) {
-					/** insert here! */
+					// insert here
 					node.setAbove(node.construct(value));
 					break;
 				} else {
@@ -112,7 +112,7 @@ public class TwoDTree {
 		TwoDNode node = root;
 		TwoDNode next;
 		while (node != null) {
-			/** if this point is below node, search that location. */
+			// if this point is below node, search that location.
 			if (node.isBelow(value)) {
 				next = node.getBelow();
 				if (next == null) {
@@ -184,7 +184,7 @@ public class TwoDTree {
 		
 		// now start back at the root, and check all rectangles that potentially
 		// overlap this smallest distance. If better one is found, return it.
-		double best[] = new double[] {smallest };  // computed best distance.
+		double[] best = new double[] { smallest };  // computed best distance.
 		
 		IPoint betterOne = root.nearest (target, best);
 		if (betterOne != null) { return betterOne; }

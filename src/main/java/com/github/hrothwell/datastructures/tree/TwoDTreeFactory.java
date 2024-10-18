@@ -16,21 +16,17 @@ import com.github.hrothwell.datastructures.array.Selection;
 public class TwoDTreeFactory {
 
 	/** The 1st element compares along dimension 1 (x) and the second y. */
-	private static final Comparator<?> comparators [] = {
+	private static final Comparator<?>[] comparators  = {
 		null,
-		new Comparator<IPoint>() {
-			public int compare(IPoint o1, IPoint o2) {
-				double v = FloatingPoint.value(o1.getX() - o2.getX());
-				return (int) v;
-			}
-		},
-		new Comparator<IPoint>() {
-			public int compare(IPoint o1, IPoint o2) {
-				double v = FloatingPoint.value(o1.getY() - o2.getY());
-				return (int) v;
-			}
-		}
-	};
+    (Comparator<IPoint>) (o1, o2) -> {
+      double v = FloatingPoint.value(o1.getX() - o2.getX());
+      return (int) v;
+    },
+    (Comparator<IPoint>) (o1, o2) -> {
+      double v = FloatingPoint.value(o1.getY() - o2.getY());
+      return (int) v;
+    }
+  };
 	
 	/**
 	 * Generate a TwoDTree from the given array of points.
@@ -46,7 +42,7 @@ public class TwoDTreeFactory {
 	 * @param points    initial set of points to insert into TwoDTree
 	 * @return          balanced TwoDTree representing these points
 	 */
-	public static synchronized TwoDTree generate (IPoint []points) {
+	public static synchronized TwoDTree generate (IPoint[] points) {
 		if (points.length == 0) { return null; }
 		
 		// median will be the root.
@@ -70,7 +66,7 @@ public class TwoDTreeFactory {
 	}
 	
 	/** Helper method to generate TwoDNode for tree. */
-	private static TwoDNode generate (int d, IPoint points[], int left, int right) {
+	private static TwoDNode generate (int d, IPoint[] points, int left, int right) {
 		
 		// Handle the easy cases first
 		if (right < left) { return null; }
@@ -78,10 +74,10 @@ public class TwoDTreeFactory {
 			return construct (d, points[left]);
 		}
 		
-        // Order the array[left,right] so the mth element will be the median
-        // and the elements prior to it will all be smaller, though they won't
-        // necessarily be sorted; similarly, the elements after will all be larger, 
-        // though they won't necessarily be sorted.
+		// Order the array[left,right] so the mth element will be the median
+		// and the elements prior to it will all be smaller, though they won't
+		// necessarily be sorted; similarly, the elements after will all be larger,
+		// though they won't necessarily be sorted.
 		int m = 1+(right-left)/2;
 		Selection.select(points, m, left, right, comparators[d]);
 		
