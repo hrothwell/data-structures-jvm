@@ -166,7 +166,6 @@ public class TwoDRectangle implements IRectangle {
 			}
 		}
 		
-		// nope!
 		return false;
 	}
 	
@@ -189,14 +188,13 @@ public class TwoDRectangle implements IRectangle {
 		if (o == null) return false;
 		if (o instanceof IRectangle) {
 			IRectangle other = (IRectangle) o;
-			
+
 			return left == other.getLeft() &&
 				   bottom == other.getBottom() &&
 				   right == other.getRight() &&
 				   top == other.getTop();
 		}
-		
-		// nope
+
 		return false;
 	}
 }

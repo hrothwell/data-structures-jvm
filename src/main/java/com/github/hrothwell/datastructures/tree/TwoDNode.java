@@ -161,8 +161,8 @@ public abstract class TwoDNode {
 	 *                    IPoint; if non-null, then min[0] is updated to reflect this
 	 *                    closer distance.
 	 */
-	IPoint nearest (IPoint target, double min[]) {
-	    // Update minimum if we are closer.
+	IPoint nearest (IPoint target, double[] min) {
+		// Update minimum if we are closer.
 		IPoint result = null;
 		
 		double d = TwoDTree.distance(target, point);
